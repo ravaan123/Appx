@@ -163,3 +163,6 @@ async def handle_appxv2_logic(bot: bot, m: Message, api_endpoint: str):
                     document=f"{bname}.txt",
                     caption=f"✅** TEXT FILE **✅\n📍**APP Name**: Appx\n🔰**Batch Name**: `{bname}`"
         )
+
+
+bot.run()
