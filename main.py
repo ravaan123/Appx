@@ -24,6 +24,20 @@ bot = Client(
     api_hash=os.environ.get("API_HASH")
 )
 
+logger = logging.getLogger()
+# thumb = os.environ.get("THUMB")
+# if thumb.startswith("http://") or thumb.startswith("https://"):
+#     getstatusoutput(f"wget '{thumb}' -O 'thumb.jpg'")
+#     thumb = "thumb.jpg"
+
+@bot.on_message(filters.command(["start"]))
+async def start(bot, update):
+       await update.reply_text("Hi i am **Careerwill Downloader**.\n\n"
+                              "**NOW:-** "
+                                       
+                                       "first join here - @Hemendraa148 for command ..\n\n"
+                                     "Bot made by **@Diftann...『𝗛𝗘𝗠𝗨』❤️🌚**" )
+
 async def fetch_data(session, url, headers=None):
     async with session.get(url, headers=headers) as response:
         return await response.json()
