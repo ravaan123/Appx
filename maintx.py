@@ -19,9 +19,9 @@ from urllib.parse import unquote
 # import requests
 # bot = Client(
 #     "bot",
-#     api_id=api_id,
-#     api_hash=api_hash,
-#     bot_token=bot_token)
+#     api_id=28031075,
+#     api_hash=6a309d42eda281416f798a554360e6a8,
+#     bot_token=6932571394:AAFIsD7_ZiOPHvItjJoDUpt6TuWII38-V98)
 
 
 bot = Client(
