@@ -55,6 +55,7 @@ def decrypt_link(link):
     except Exception as e:
         print(f"Error decrypting link: {e}")
 
+@bot.on_message(filters.command("hemu"))
 async def handle_appxv2_logic(bot: bot, m: Message, api_endpoint: str):
     editable = await m.reply_text("Send **ID & Password** in this manner otherwise bot will not respond.\n\nSend like this:-  **ID*Password**")
     input1 = await bot.listen(editable.chat.id)
